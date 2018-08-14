@@ -47,7 +47,9 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Title score = {this.state.score} highscore={this.state.highscore}>MEMORIES</Title>
+        <Title score = {this.state.score} 
+        highscore={this.state.highscore}> Bob's Burgers Memory Game
+        </Title>
         {this.state.cards.map(card => (
           <Card
           clickCount = {this.clickCount}
